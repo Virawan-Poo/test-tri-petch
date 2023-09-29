@@ -1,0 +1,208 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  img {
+    @apply w-full h-full;
+  }
+}
+
+@layer components {
+  .swiper-content .swiper-pagination-bullets.swiper-pagination-horizontal {
+    @apply bottom-[30px];
+  }
+
+  .swiper-content .swiper-pagination-bullet {
+    width: 10px;
+    height: 10px;
+  }
+
+  .swiper-content .swiper-pagination-bullet-active {
+    @apply bg-purple;
+  }
+
+  .swiper-content .swiper-wrapper {
+    @apply md:flex-col;
+  }
+
+  .section-athletes .swiper-content {
+    @apply mt-[-50px] md:mt-0;
+  }
+
+  .section-athletes .head-title {
+    @apply lg:pl-[10vw] xl:mt-[30px] xl:pl-[50%];
+  }
+
+  .section-athletes .content-list {
+    @apply pt-[80px] pb-[70px] md:pl-[40%] xl:pl-[50%];
+  }
+
+  .section-athletes .content-list:nth-child(3) {
+    @apply md:pb-[60px] md:bg-purple xl:py-[80px];
+  }
+
+  .section-athletes .content-list:nth-child(3) .title-wrap {
+    @apply md:text-gray;
+  }
+
+  .section-athletes .content-list:nth-child(3) .order-number {
+    @apply md:text-black md:after:bg-white;
+  }
+
+  .section-athletes .content-list:nth-child(3) .description {
+    @apply md:text-white;
+  }
+
+  .section-players .swiper-content {
+    @apply mt-[-55px] md:mt-0;
+  }
+
+  .section-players .text-wrap {
+    @apply md:w-[60%] lg:w-[50%];
+  }
+
+  .section-players .head-title {
+    @apply lg:pl-[10vw] xl:pl-[20vw];
+  }
+
+  .section-players .content-list {
+    @apply pt-[100px] pb-[70px] md:pl-[3vw] lg:pl-[10vw] xl:pl-[20vw];
+  }
+
+  .section-players .content-list:nth-child(1) {
+    @apply md:pb-[14px] xl:pb-[60px];
+  }
+
+  .section-players .content-list:nth-child(2) {
+    @apply md:py-[60px] xl:pb-[90px];
+  }
+
+  .section-players .content-list:nth-child(3) {
+    @apply md:pb-[60px] md:pt-[40px] md:bg-darkPurple xl:pt-[80px];
+  }
+
+  .section-players .content-list:nth-child(3) .order-number {
+    @apply md:text-purple md:after:bg-white;
+  }
+
+  .section-players .content-list:nth-child(3) .title {
+    @apply md:text-white;
+  }
+
+  .section-players .content-list:nth-child(3) .description {
+    @apply md:text-white;
+  }
+
+  .icon-wrap {
+    width: calc(218 / 320 * 100vw);
+    height: calc(281 / 320 * 100vw);
+    @apply absolute top-0 left-[50%] translate-x-[-50%];
+  }
+
+  .rugby-img {
+    width: calc(200 / 320 * 100vw);
+    height: calc(281 / 320 * 100vw);
+  }
+
+  .basketball-img {
+    width: calc(302 / 320 * 100vw);
+    height: calc(249 / 320 * 100vw);
+  }
+
+  .icon-line {
+    width: calc(187 / 320 * 100vw);
+    height: calc(197 / 320 * 100vw);
+    @apply absolute left-[50%] translate-x-[-50%];
+  }
+
+  .icon-line2 {
+    width: calc(106 / 320 * 100vw);
+    height: calc(123 / 320 * 100vw);
+    bottom: calc(50 / 320 * 100vw);
+    @apply absolute left-0;
+  }
+
+  .icon-line3 {
+    width: calc(77 / 320 * 100vw);
+    height: calc(90 / 320 * 100vw);
+    top: calc(25 / 320 * 100vw);
+    right: calc(-10 / 320 * 100vw);
+    @apply absolute;
+  }
+
+  .icon-plus {
+    width: 15px;
+    height: 15px;
+  }
+
+  .icon-plus-bottom {
+    width: 15px;
+    height: 15px;
+    bottom: calc(130 / 320 * 100vw);
+  }
+
+  @screen md {
+    .rugby-img {
+      width: 498px;
+      height: 699px;
+    }
+
+    .basketball-img {
+      width: 691px;
+      height: 568px;
+    }
+
+    .icon-wrap {
+      width: 436px;
+      height: 562px;
+    }
+
+    .icon-line {
+      width: 335px;
+      height: 380px;
+      @apply right-[15px] left-[unset] right-[-110px] translate-x-[unset];
+    }
+
+    .icon-line2 {
+      width: 238px;
+      height: 247px;
+      @apply bottom-[75px] left-[16px];
+    }
+
+    .icon-line3 {
+      width: 154px;
+      height: 180px;
+      @apply top-[90px] right-[-45px];
+    }
+  }
+
+  @screen xl {
+    .rugby-img {
+      width: 678px;
+      height: 950px;
+    }
+
+    .basketball-img {
+      width: 991px;
+      height: 815px;
+    }
+
+    .icon-wrap {
+      width: 911px;
+      height: 815px;
+    }
+
+    .icon-line2 {
+      width: 262px;
+      height: 304px;
+      @apply bottom-[60px] left-[150px];
+    }
+
+    .icon-line3 {
+      width: 265px;
+      height: 311px;
+      @apply top-[80px] right-[40px];
+    }
+  }
+}
