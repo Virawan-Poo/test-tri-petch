@@ -11,7 +11,7 @@ export default function index(): ReactElement {
     <>
       <Head>
         <title>Test Tri Petch</title>
-        <meta name="description" content="For Test" />
+        <meta name="description" content="For Test Project" />
         <meta name="keywords" content="test" />
       </Head>
 
